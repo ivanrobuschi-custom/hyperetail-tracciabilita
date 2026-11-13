@@ -1,12 +1,10 @@
 ---
 title: "Promozioni a soglia di peso"
-date: "2026-11-12"
+date: "2026-11-13"
 categoria: software Hyperetail
 ---
 
 # Promozioni a soglia di peso
-
-**Target:** rivenditore / tecnico installatore.
 
 ## Obiettivo
 
@@ -22,7 +20,7 @@ Toccando un articolo in promozione la bilancia, dopo la scelta del lotto, mostra
 
 ## Due tipi di promozione
 
-| Tipo | Che cosa cambia | Esempio del webinar |
+| Tipo | Che cosa cambia | Esempio |
 |------|-----------------|---------------------|
 | **Taglio prezzo** | Il prezzo al chilo, a scaglioni | Filetto: oltre 100 g 45,00 €/kg; oltre 200 g 43,00; oltre 300 g 41,00; oltre 500 g 35,00 |
 | **Percentuale di sconto** | Lo sconto applicato, a scaglioni | Fiorentina: oltre 100 g il 10%, poi 20%, 30% e 50% |
@@ -48,7 +46,7 @@ Sullo scontrino gli articoli in promozione riportano il **prezzo di origine** e 
 
 ### 2. Aggancia la promozione all'articolo
 
-Nella scheda dell'articolo, sezione **Extra**, indica l'**ID della promozione** di cui fa parte. La stessa operazione vale per ogni articolo da mettere in promozione (nel webinar il filetto e la fiorentina).
+Nella scheda dell'articolo, sezione **Extra**, indica l'**ID della promozione** di cui fa parte. La stessa operazione vale per ogni articolo da mettere in promozione (nell'esempio il filetto e la fiorentina).
 
 ## Verifica
 
@@ -59,7 +57,7 @@ Nella scheda dell'articolo, sezione **Extra**, indica l'**ID della promozione** 
 ## Da sapere
 
 - Queste promozioni funzionano **anche senza un gestionale collegato**: la bilancia le gestisce da sola, come una sorta di volantino.
-- Nel webinar viene anticipato che, negli ecosistemi più complessi, le promozioni saranno gestibili a breve anche direttamente da **HyperStore**.
+- Negli ecosistemi più complessi è previsto che le promozioni diventino gestibili a breve anche direttamente da **HyperStore**.
 
 !!! tip "Non solo macellerie"
     Lo stesso meccanismo si adatta bene a **gelaterie** e **pasticcerie**: per esempio la vaschetta di gelato venduta a peso, con la tolleranza sulla soglia.

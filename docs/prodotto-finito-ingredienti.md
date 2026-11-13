@@ -1,12 +1,10 @@
 ---
 title: "Prodotto finito e ingredienti"
-date: "2026-11-12"
+date: "2026-11-13"
 categoria: software Hyperetail
 ---
 
 # Prodotto finito e ingredienti
-
-**Target:** tecnico installatore.
 
 ## Obiettivo
 
@@ -61,7 +59,7 @@ In **Anagrafiche → Fornitori** crea il fornitore da cui acquisti gli ingredien
 *Gli ingredienti proposti e i giorni di scadenza: sono i dati che finiranno in etichetta.*
 
 !!! warning "Controlla sempre il testo generato"
-    L'elenco proposto è un suggerimento: nel webinar, per esempio, si nota che la frutta a guscio proposta nella ricetta non c'è, e il testo si può modificare in qualsiasi momento. Ingredienti e allergeni in etichetta devono corrispondere al prodotto reale.
+    L'elenco proposto è un suggerimento: nell'esempio la frutta a guscio proposta nella ricetta non c'è, e il testo si può modificare in qualsiasi momento. Ingredienti e allergeni in etichetta devono corrispondere al prodotto reale.
 
 Il testo degli ingredienti è quello che comparirà sull'etichetta del preparato; i giorni di scadenza vengono usati per calcolare la scadenza a ogni produzione.
 

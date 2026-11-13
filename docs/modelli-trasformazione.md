@@ -1,12 +1,10 @@
 ---
 title: "Modelli di trasformazione"
-date: "2026-11-12"
+date: "2026-11-13"
 categoria: software Hyperetail
 ---
 
 # Modelli di trasformazione
-
-**Target:** tecnico installatore / operatore di back office.
 
 ## Obiettivo
 
@@ -24,7 +22,7 @@ Definire la **ricetta** di un preparato: quali ingredienti, in che quantità, pe
 4. Nella sezione **Destinazione** indica il prodotto ottenuto e la quantità (nell'esempio 1 kg).
 5. Conferma con **OK**: il modello compare nell'elenco dei modelli.
 
-### L'esempio del webinar
+### L'esempio: polpette alla napoletana
 
 Per ottenere **1 kg** di prodotto:
 

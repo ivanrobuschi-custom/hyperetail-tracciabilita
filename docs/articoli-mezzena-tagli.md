@@ -1,12 +1,10 @@
 ---
 title: "Articoli: mezzena, tagli e macinato"
-date: "2026-11-12"
+date: "2026-11-13"
 categoria: software Hyperetail
 ---
 
 # Articoli: mezzena, tagli e macinato
-
-**Target:** tecnico installatore.
 
 ## Obiettivo
 
@@ -28,7 +26,7 @@ Impostare correttamente in anagrafica i tre tipi di articolo che compongono il f
 
 ### 1. La mezzena
 
-1. Apri **Prodotti** e crea (o richiama) l'articolo, per esempio **MEZZENA BOVINO ADULTO LATO SX**. Nell'archivio del webinar le mezzene sono due articoli distinti: lato sinistro e lato destro.
+1. Apri **Prodotti** e crea (o richiama) l'articolo, per esempio **MEZZENA BOVINO ADULTO LATO SX**. Nell'archivio di esempio le mezzene sono due articoli distinti: lato sinistro e lato destro.
 2. Nella scheda **Avanzate** attiva **Deperibile** e **Lotti**: sono le uniche due informazioni indispensabili per il prodotto in ingresso.
 3. La stessa mezzena può arrivare da **più fornitori**. Con **Aggiungi Ean** crea un EAN (anche interno) per ciascun fornitore.
 4. Seleziona l'EAN, premi **Dettaglio Ean** e, nella scheda **Bilancia**, associa la **Definizione Tracciabilità** preconfigurata: per esempio la definizione precompilata del fornitore su un EAN e una definizione ridotta sull'altro.

@@ -1,12 +1,10 @@
 ---
 title: "Eseguire una trasformazione"
-date: "2026-11-12"
+date: "2026-11-13"
 categoria: software Hyperetail
 ---
 
 # Eseguire una trasformazione
-
-**Target:** operatore di back office / tecnico installatore.
 
 ## Obiettivo
 
@@ -47,7 +45,7 @@ Nella **Lista Trasformazioni** la produzione compare con il lotto e la scadenza 
 
 ## Errori comuni
 
-Sono i casi capitati davvero durante la dimostrazione.
+Sono casi che capitano davvero durante il lavoro.
 
 | Problema | Causa | Rimedio |
 |----------|-------|---------|

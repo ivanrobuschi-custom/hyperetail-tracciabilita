@@ -1,12 +1,10 @@
 ---
 title: "Rintracciabilità dei lotti"
-date: "2026-11-12"
+date: "2026-11-13"
 categoria: software Hyperetail
 ---
 
 # Rintracciabilità dei lotti
-
-**Target:** rivenditore / operatore di back office.
 
 ## Obiettivo
 
@@ -39,7 +37,7 @@ Si apre il dettaglio della trasformazione, con le righe di **origine** e di **de
 
 *Il polpettone del lotto LT261112 e i lotti dei suoi ingredienti.*
 
-Nell'esempio del webinar il polpettone **LT261112** risulta prodotto con:
+Nell'esempio il polpettone **LT261112** risulta prodotto con:
 
 | Ingrediente | Lotto |
 |-------------|-------|

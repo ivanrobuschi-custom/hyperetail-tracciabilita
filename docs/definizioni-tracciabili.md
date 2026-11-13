@@ -1,12 +1,10 @@
 ---
 title: "Definizioni tracciabili"
-date: "2026-11-12"
+date: "2026-11-13"
 categoria: software Hyperetail
 ---
 
 # Definizioni tracciabili
-
-**Target:** tecnico installatore / rivenditore.
 
 ## Obiettivo
 
@@ -66,7 +64,7 @@ La definizione cambia a seconda della carne: le dinamiche sono simili ma non ide
 |-------|---------------|
 | **Bovina** | La più articolata: ID animale, nascita, allevamento, macellazione, sezionamento |
 | **Avicola** (pollo) | Si ragiona per lotto di macellazione; tra i dati facoltativi c'è il **tipo di allevamento** (a terra oppure in gabbia), oggi molto richiesto |
-| **Suina** | Richiede meno informazioni in lavorazione; si può indicare se la carne è di razza pura o di **incrocio** e la **classe della carcassa (SEUROP)**, che nel webinar viene collegata alla percentuale di grasso |
+| **Suina** | Richiede meno informazioni in lavorazione; si può indicare se la carne è di razza pura o di **incrocio** e la **classe della carcassa (SEUROP)**, collegata alla percentuale di grasso |
 
 ![Esempio dei dati di tracciabilità della carne avicola: lotto di macellazione, codice allevamento, tipo di allevamento](assets/images/tracciabilita-pollo.jpg)
 

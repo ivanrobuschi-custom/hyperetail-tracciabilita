@@ -1,12 +1,10 @@
 ---
 title: "Carico della mezzena e del lotto"
-date: "2026-11-12"
+date: "2026-11-13"
 categoria: software Hyperetail
 ---
 
 # Carico della mezzena e del lotto
-
-**Target:** tecnico installatore / operatore di back office.
 
 ## Obiettivo
 

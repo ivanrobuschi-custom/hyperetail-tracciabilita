@@ -1,16 +1,17 @@
 ---
 title: "Tracciabilità delle carni: concetti e obblighi"
-date: "2026-11-12"
+date: "2026-11-13"
 categoria: software Hyperetail
 ---
 
 # Tracciabilità: concetti e obblighi
 
-**Target:** rivenditore / tecnico installatore.
-
 ## Obiettivo
 
 Avere chiaro che cosa significa **tracciabilità delle carni**, quali dati accompagnano una mezzena, che cosa deve comunicare il macellaio al consumatore e perché la tracciabilità non va confusa con il **lotto di produzione**. Sono gli argomenti con cui presentarsi a una macelleria.
+
+!!! info "Il riferimento normativo"
+    Regolamenti europei, decreti italiani e indicazioni obbligatorie per le carni bovine sono riassunti nella pagina [Normativa europea e italiana](normativa-carni-bovine.md). Tra le indicazioni obbligatorie ci sono anche il Paese di **sezionamento** e i numeri di approvazione del macello e del laboratorio.
 
 ## Si parte dalla mezzena
 
@@ -31,7 +32,7 @@ Le informazioni viaggiano su **etichette** con codici a barre strutturati (EAN 1
 
 ## I dati che accompagnano la mezzena
 
-Nell'esempio del webinar la mezzena è accompagnata da **27 informazioni**. Non hanno tutte lo stesso peso:
+Nell'esempio la mezzena è accompagnata da **27 informazioni**. Non hanno tutte lo stesso peso:
 
 | Gruppo | Esempi | Note |
 |--------|--------|------|

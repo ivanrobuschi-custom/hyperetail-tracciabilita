@@ -1,12 +1,10 @@
 ---
 title: "Vendita al banco con il lotto"
-date: "2026-11-12"
+date: "2026-11-13"
 categoria: software Hyperetail
 ---
 
 # Vendita al banco con il lotto
-
-**Target:** rivenditore / operatore di banco.
 
 ## Obiettivo
 
@@ -46,7 +44,7 @@ Vendere dalla bilancia Icona un taglio ricavato dalla mezzena scegliendo il **lo
 | **Richiesta del lotto** | Scelto una volta e mantenuto per tutti i prodotti di quella categoria, oppure richiesto a ogni articolo |
 
 !!! note "Tasti con le immagini"
-    Nella dimostrazione i tasti sono grandi e con richiamo grafico per mostrare le potenzialità della bilancia: sono scenografici, ma in vendita per il macellaio risultano scomodi.
+    Nelle schermate di esempio i tasti sono grandi e con richiamo grafico per mostrare le potenzialità della bilancia: sono scenografici, ma in vendita per il macellaio risultano scomodi.
 
 ## Verifica
 

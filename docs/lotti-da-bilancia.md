@@ -1,12 +1,10 @@
 ---
 title: "Lotti tracciabili dalla bilancia"
-date: "2026-11-12"
+date: "2026-11-13"
 categoria: software Hyperetail
 ---
 
 # Lotti tracciabili dalla bilancia
-
-**Target:** rivenditore / tecnico installatore.
 
 ## Obiettivo
 

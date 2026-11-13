@@ -1,12 +1,10 @@
 ---
 title: "Conti sospesi e comande"
-date: "2026-11-12"
+date: "2026-11-13"
 categoria: software Hyperetail
 ---
 
 # Conti sospesi e comande
-
-**Target:** rivenditore / operatore di banco.
 
 ## Obiettivo
 

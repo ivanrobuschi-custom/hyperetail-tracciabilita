@@ -1,12 +1,10 @@
 ---
 title: "DeLine: totem, code e cassa"
-date: "2026-11-12"
+date: "2026-11-13"
 categoria: software Hyperetail
 ---
 
 # DeLine: totem, code e cassa
-
-**Target:** rivenditore.
 
 ## Obiettivo
 

@@ -1,12 +1,10 @@
 ---
 title: "Etichette parlanti e immagini"
-date: "2026-11-12"
+date: "2026-11-13"
 categoria: software Hyperetail
 ---
 
 # Etichette parlanti e immagini
-
-**Target:** rivenditore / tecnico installatore.
 
 ## Obiettivo
 
@@ -40,8 +38,8 @@ Oltre ai dati di tracciabilità, tara, peso netto e prezzo, l'etichetta può por
 
 *Etichetta di un taglio: un QR code nell'intestazione e uno riferito all'articolo.*
 
-| QR code | Esempi di utilizzo mostrati nel webinar |
-|---------|------------------------------------------|
+| QR code | Esempi di utilizzo |
+|---------|--------------------|
 | **Dell'intestazione** | Rimando a una pagina video che racconta la storia dell'azienda |
 | **Dell'articolo** | Dati nutrizionali aggiuntivi del prodotto, oppure un video con i consigli di preparazione (per esempio come cucinare la fiorentina) |
 

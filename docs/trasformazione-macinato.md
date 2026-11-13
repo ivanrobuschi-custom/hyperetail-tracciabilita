@@ -1,12 +1,10 @@
 ---
 title: "Dalla mezzena al macinato"
-date: "2026-11-12"
+date: "2026-11-13"
 categoria: software Hyperetail
 ---
 
 # Dalla mezzena al macinato
-
-**Target:** tecnico installatore / operatore di back office.
 
 ## Obiettivo
 

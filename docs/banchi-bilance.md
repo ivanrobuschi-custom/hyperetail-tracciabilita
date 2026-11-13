@@ -1,12 +1,10 @@
 ---
 title: "Banchi e bilance in HyperStore"
-date: "2026-11-12"
+date: "2026-11-13"
 categoria: software Hyperetail
 ---
 
 # Banchi e bilance in HyperStore
-
-**Target:** tecnico installatore.
 
 ## Obiettivo
 
@@ -55,7 +53,7 @@ Nell'esempio la bilancia è di tipo **Zenith**: è il protocollo dei driver trad
 Allo stesso banco puoi collegare più bilance. Il programma è **multi-negozio**: nella stessa struttura si gestiscono più punti vendita, anche con bilance di modelli diversi.
 
 !!! warning "Tracciabilità: solo con Icona"
-    Al momento del webinar le bilance compatibili con la gestione della tracciabilità da HyperStore sono **solo le Icona**.
+    Al momento le bilance compatibili con la gestione della tracciabilità da HyperStore sono **solo le Icona**.
 
 ## Verifica
 

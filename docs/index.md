@@ -1,19 +1,27 @@
 ---
 title: "Hyperetail - Tracciabilità, lotti e trasformazioni"
-date: "2026-11-12"
+date: "2026-11-13"
 categoria: software Hyperetail
 ---
 
 # Tracciabilità, lotti e trasformazioni con Hyperetail e bilancia Icona
 
-Guida tratta dal webinar **"Hyperetail, bilance Icona, DeLine, tracciabilità, lotti e trasformazioni"** del 12 novembre 2026. Segue una macelleria dall'arrivo della **mezzena** fino alla vendita al banco: il lotto tracciabile viene caricato una sola volta in **HyperStore**, arriva da solo sulla **bilancia Icona** e resta ricostruibile anche dopo le lavorazioni (macinato, polpette, polpettone).
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 2rem; margin: 1.5rem 0;">
+  <a href="https://www.custom.biz/software/suites/hyperetail-general-store" target="_blank" rel="noopener" style="flex: 0 1 190px;">
+    <img src="assets/images/hyperetail-logo.png" alt="Logo della soluzione software Hyperetail" style="display: block; width: 100%; border-radius: 16px;">
+  </a>
+  <a href="https://www.custom.biz/software/suites/hyperetail-general-store" target="_blank" rel="noopener" style="flex: 1 1 340px; max-width: 520px;">
+    <img src="assets/images/hyperetail-gamma.png" alt="La gamma di dispositivi su cui lavora Hyperetail: casse touch, bilancia, totem, tablet, smartphone, stampanti e lettori" style="display: block; width: 100%;">
+  </a>
+</div>
+
+Scopri la soluzione software **Hyperetail** sul sito istituzionale Custom: [custom.biz - Hyperetail](https://www.custom.biz/software/suites/hyperetail-general-store).
+
+Questa guida segue una macelleria dall'arrivo della **mezzena** fino alla vendita al banco: il lotto tracciabile viene caricato una sola volta in **HyperStore**, arriva da solo sulla **bilancia Icona** e resta ricostruibile anche dopo le lavorazioni (macinato, polpette, polpettone).
 
 ![Schermata di vendita della bilancia Icona con le categorie della macelleria e i tasti articolo](assets/images/icona-vendita-articolo.jpg)
 
-*La bilancia Icona del banco macelleria usata nella dimostrazione.*
-
-!!! info "A chi serve"
-    Al **rivenditore** e al **tecnico installatore** che propongono e configurano la suite in macellerie, gastronomie e banchi di prodotti pesati. La prima parte chiarisce i concetti da spiegare al cliente; le pagine operative entrano nel dettaglio della configurazione.
+*La schermata di vendita della bilancia Icona del banco macelleria.*
 
 ---
 
@@ -50,6 +58,7 @@ Guida tratta dal webinar **"Hyperetail, bilance Icona, DeLine, tracciabilità, l
 | Pagina | Contenuto |
 |--------|-----------|
 | [Concetti e obblighi](tracciabilita-carni.md) | Mezzena, dati di origine, obbligo di informare il consumatore |
+| [Normativa europea e italiana](normativa-carni-bovine.md) | Regolamenti CE, decreti italiani, indicazioni obbligatorie in etichetta, controlli |
 | [Banchi e bilance in HyperStore](banchi-bilance.md) | Gruppi Bilance - Banchi e anagrafica Bilance |
 | [Definizioni tracciabili](definizioni-tracciabili.md) | Estese, ridotte e precompilate; bovino, avicolo, suino |
 | [Articoli: mezzena, tagli e macinato](articoli-mezzena-tagli.md) | Come impostare i tre tipi di articolo |
@@ -87,8 +96,12 @@ Guida tratta dal webinar **"Hyperetail, bilance Icona, DeLine, tracciabilità, l
 ## Prerequisiti
 
 - **HyperStore** con il modulo **LiveRetail** attivo.
-- Una **bilancia Icona** in rete: al momento del webinar la tracciabilità gestita da HyperStore è compatibile **solo con Icona**.
+- Una **bilancia Icona** in rete: al momento la tracciabilità gestita da HyperStore è compatibile **solo con Icona**.
 - Bilancia già configurata (banchi, articoli, tastiera).
 
-!!! note "Origine dei contenuti"
-    Testi e schermate provengono dalla dimostrazione dal vivo del webinar, eseguita su archivi dimostrativi: nomi di fornitori, lotti e prezzi che compaiono nelle immagini sono dati di esempio.
+## Documenti scaricabili
+
+- [Circolare sui controlli dell'etichettatura delle carni bovine (PDF)](assets/resources/Circ_carni_bovine.pdf), riassunta nella pagina [Normativa europea e italiana](normativa-carni-bovine.md).
+
+!!! note "Dati di esempio"
+    Le schermate provengono da archivi dimostrativi: nomi di fornitori, lotti e prezzi che compaiono nelle immagini sono dati di esempio.
