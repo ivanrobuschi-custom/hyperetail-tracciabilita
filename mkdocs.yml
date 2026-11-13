@@ -1,0 +1,66 @@
+site_name: Hyperetail - Tracciabilità, lotti e trasformazioni
+site_url: https://github.com/ivanrobuschi-custom/hyperetail-tracciabilita.git
+site_author: Custom S.p.A.
+
+theme:
+  name: material
+  logo: assets/icons/logo.png
+  favicon: assets/icons/favicon.png
+  language: it
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.preview
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    - navigation.sections
+    - navigation.prune
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - navigation.footer
+  palette:
+    primary: blue grey
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+plugins:
+  - search
+  - tags
+
+copyright: Copyright Custom S.p.A 2026
+
+nav:
+  - Home: index.md
+  - Tracciabilità delle carni:
+      - Concetti e obblighi: tracciabilita-carni.md
+      - Banchi e bilance in HyperStore: banchi-bilance.md
+      - Definizioni tracciabili: definizioni-tracciabili.md
+      - Articoli - mezzena, tagli e macinato: articoli-mezzena-tagli.md
+      - Carico della mezzena e del lotto: carico-mezzena.md
+      - Vendita al banco con il lotto: vendita-bilancia.md
+  - Lotti di produzione e trasformazioni:
+      - Dalla mezzena al macinato: trasformazione-macinato.md
+      - Prodotto finito e ingredienti: prodotto-finito-ingredienti.md
+      - Carico degli ingredienti da CSV: carico-ingredienti.md
+      - Modelli di trasformazione: modelli-trasformazione.md
+      - Eseguire una trasformazione: eseguire-trasformazione.md
+      - Rintracciabilità dei lotti: rintracciabilita-lotti.md
+  - Novità bilancia Icona:
+      - Etichette parlanti e immagini: etichette-parlanti.md
+      - Lotti tracciabili dalla bilancia: lotti-da-bilancia.md
+      - Conti sospesi e comande: conti-sospesi.md
+      - Promozioni a soglia di peso: promozioni-a-soglia.md
+  - DeLine e cassa:
+      - Totem, code e cassa: totem-eliminacode.md
