@@ -1,0 +1,1334 @@
+
+<!doctype html>
+<html lang="it" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Custom S.p.A.">
+      
+      
+        <link rel="canonical" href="https://github.com/ivanrobuschi-custom/hyperetail-tracciabilita.git/carico-ingredienti/">
+      
+      
+        <link rel="prev" href="../prodotto-finito-ingredienti/">
+      
+      
+        <link rel="next" href="../modelli-trasformazione/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/icons/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
+    
+    
+      
+        <title>Carico degli ingredienti da CSV - Hyperetail - Tracciabilità, lotti e trasformazioni</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#carico-degli-ingredienti-da-csv" class="md-skip">
+          Vai al contenuto
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Intestazione">
+    <a href=".." title="Hyperetail - Tracciabilità, lotti e trasformazioni" class="md-header__button md-logo" aria-label="Hyperetail - Tracciabilità, lotti e trasformazioni" data-md-component="logo">
+      
+  <img src="../assets/icons/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Hyperetail - Tracciabilità, lotti e trasformazioni
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Carico degli ingredienti da CSV
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Condividi" aria-label="Condividi" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Cancella" aria-label="Cancella" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inizializza la ricerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../tracciabilita-carni/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Tracciabilità delle carni
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../trasformazione-macinato/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Lotti di produzione e trasformazioni
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../etichette-parlanti/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Novità bilancia Icona
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../totem-eliminacode/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  DeLine e cassa
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigazione" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Hyperetail - Tracciabilità, lotti e trasformazioni" class="md-nav__button md-logo" aria-label="Hyperetail - Tracciabilità, lotti e trasformazioni" data-md-component="logo">
+      
+  <img src="../assets/icons/logo.png" alt="logo">
+
+    </a>
+    Hyperetail - Tracciabilità, lotti e trasformazioni
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../tracciabilita-carni/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tracciabilità delle carni
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lotti di produzione e trasformazioni
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Lotti di produzione e trasformazioni
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trasformazione-macinato/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dalla mezzena al macinato
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prodotto-finito-ingredienti/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prodotto finito e ingredienti
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Carico degli ingredienti da CSV
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Carico degli ingredienti da CSV
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#obiettivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Obiettivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisiti" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prerequisiti
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passaggi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Passaggi
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Passaggi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-apri-il-documento-di-carico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Apri il documento di carico
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-importa-le-righe-dal-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Importa le righe dal file
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-collega-i-codici-del-fornitore-ai-tuoi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Collega i codici del fornitore ai tuoi
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-controlla-e-conferma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Controlla e conferma
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verifica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verifica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#errori-comuni" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Errori comuni
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modelli-trasformazione/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelli di trasformazione
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../eseguire-trasformazione/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Eseguire una trasformazione
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rintracciabilita-lotti/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rintracciabilità dei lotti
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../etichette-parlanti/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Novità bilancia Icona
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../totem-eliminacode/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DeLine e cassa
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#obiettivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Obiettivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisiti" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prerequisiti
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passaggi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Passaggi
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Passaggi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-apri-il-documento-di-carico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Apri il documento di carico
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-importa-le-righe-dal-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Importa le righe dal file
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-collega-i-codici-del-fornitore-ai-tuoi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Collega i codici del fornitore ai tuoi
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-controlla-e-conferma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Controlla e conferma
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verifica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verifica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#errori-comuni" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Errori comuni
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigazione" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href=".." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../trasformazione-macinato/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Lotti di produzione e trasformazioni
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="carico-degli-ingredienti-da-csv">Carico degli ingredienti da CSV</h1>
+<h2 id="obiettivo">Obiettivo</h2>
+<p>Caricare a magazzino gli ingredienti acquistati, acquisendo dal file del fornitore <strong>lotti e date di scadenza</strong> in un'unica operazione, e collegare i codici del fornitore ai codici interni.</p>
+<h2 id="prerequisiti">Prerequisiti</h2>
+<ul>
+<li>Fornitore con <strong>Gestione Prodotti</strong> e <strong>Aggiornamento Listino</strong> attivi (<a href="../prodotto-finito-ingredienti/">Prodotto finito e ingredienti</a>).</li>
+<li>Il documento del fornitore (DDT o fattura) e, se disponibile, il relativo file <strong>CSV</strong>.</li>
+</ul>
+<h2 id="passaggi">Passaggi</h2>
+<h3 id="1-apri-il-documento-di-carico">1. Apri il documento di carico</h3>
+<ol>
+<li>Apri <strong>Carichi</strong> e premi <strong>Aggiungi</strong>.</li>
+<li>Scegli il <strong>Tipo Documento</strong>. Con la <strong>fattura accompagnatoria</strong> si aggiornano insieme la quantità in ingresso e il valore; in alternativa usa la bolla di carico (DDT).</li>
+<li>Indica il fornitore, il <strong>Numero Documento</strong> e la <strong>Data Documento</strong>.</li>
+<li>Compila, se serve, la <strong>Segnalazione</strong> (nell'esempio <em>IMPORTATI</em>): è un'etichetta libera utile per ritrovare il documento con una ricerca.</li>
+<li>Indica forma e tipo di pagamento.</li>
+</ol>
+<h3 id="2-importa-le-righe-dal-file">2. Importa le righe dal file</h3>
+<p>Le righe si possono inserire a mano, ma se il fornitore consegna un file conviene importarlo.</p>
+<ol>
+<li>Avvia l'importazione da file e scegli il <strong>modello di tracciato</strong>.</li>
+<li>Seleziona il file CSV ricevuto dal fornitore.</li>
+<li>Nella scheda <strong>VERIFICA</strong> controlla l'anteprima delle righe: codice prodotto, descrizione, quantità, costo, reparto, <strong>data scadenza</strong> e <strong>lotto</strong>.</li>
+<li>Premi <strong>Importa</strong>.</li>
+</ol>
+<p><img alt="Importazione articoli da file, scheda Verifica: tre righe con codice prodotto, descrizione, quantità, costo, data di scadenza e lotto" src="../assets/images/import-csv-verifica.jpg" /></p>
+<p><em>L'anteprima dell'importazione: le ultime due colonne sono data di scadenza e lotto.</em></p>
+<div class="admonition tip">
+<p class="admonition-title">Un tracciato per fornitore</p>
+<p>Conviene creare un modello di tracciato per ciascun formato di CSV del fornitore, anziché modificare il file ogni volta. Data di scadenza e lotto sono i due dati che permettono di caricare tutto in un'unica soluzione.</p>
+</div>
+<h3 id="3-collega-i-codici-del-fornitore-ai-tuoi">3. Collega i codici del fornitore ai tuoi</h3>
+<p>La prima volta che arriva un prodotto di quel fornitore, il programma chiede a quale <strong>prodotto interno</strong> collegarlo: puoi cercarne uno esistente oppure crearlo.</p>
+<p><img alt="Finestra Prodotto Azienda produttrice: collegamento tra il codice prodotto del fornitore e il prodotto interno" src="../assets/images/prodotto-fornitore-codice-interno.jpg" /></p>
+<p><em>Il collegamento tra il codice del fornitore e il prodotto interno.</em></p>
+<p>Collegare i codici ha tre vantaggi:</p>
+<ul>
+<li>lo stesso ingrediente acquistato da <strong>fornitori diversi</strong> resta un unico articolo: non si moltiplicano inutilmente i PLU nel database;</li>
+<li>alle importazioni successive le domande <strong>non vengono più fatte</strong>;</li>
+<li>si costruisce il <strong>listino del fornitore</strong>: si può sapere quando un prodotto è stato comprato l'ultima volta e a che prezzo.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Il codice fornitore non è obbligatorio</p>
+<p>Non è obbligatorio specificarlo, ma è ciò che evita di rispondere alle stesse domande a ogni carico.</p>
+</div>
+<h3 id="4-controlla-e-conferma">4. Controlla e conferma</h3>
+<p>Le righe importate riportano per ogni ingrediente quantità, prezzo di acquisto, <strong>Lotto</strong> e <strong>Data Scadenza</strong>. Conferma il documento con <strong>OK</strong>.</p>
+<p><img alt="Dettaglio carico con tre ingredienti importati: pangrattato, sale fino e pepe nero, ciascuno con lotto e data di scadenza" src="../assets/images/carico-ingredienti-lotti.jpg" /></p>
+<p><em>Il documento di carico compilato dall'importazione.</em></p>
+<div class="admonition info">
+<p class="admonition-title">Il lotto sul documento è un obbligo del fornitore</p>
+<p>Non tutti i fornitori sono attrezzati per consegnare un file, soprattutto i più piccoli. Tutti però hanno l'obbligo di legge di riportare il lotto sul documento, che sia una bolla, un foglio di carico o un DDT: in quel caso lotto e scadenza si inseriscono a mano.</p>
+</div>
+<h2 id="verifica">Verifica</h2>
+<ul>
+<li>Nella scheda di ogni ingrediente la giacenza è aumentata.</li>
+<li>I lotti caricati sono disponibili come origine quando si esegue una trasformazione (<a href="../eseguire-trasformazione/">Eseguire una trasformazione</a>).</li>
+</ul>
+<h2 id="errori-comuni">Errori comuni</h2>
+<table>
+<thead>
+<tr>
+<th>Problema</th>
+<th>Causa probabile</th>
+<th>Rimedio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A ogni carico viene richiesto il collegamento del prodotto</td>
+<td>Il codice del fornitore non è stato collegato al prodotto interno</td>
+<td>Completa il collegamento alla prima richiesta</td>
+</tr>
+<tr>
+<td>Lo stesso ingrediente compare come più articoli</td>
+<td>È stato creato un prodotto nuovo invece di collegarlo a quello esistente</td>
+<td>Collega i codici dei diversi fornitori allo stesso prodotto interno</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Torna su
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Piede" >
+        
+          
+          <a href="../prodotto-finito-ingredienti/" class="md-footer__link md-footer__link--prev" aria-label="Precedente: Prodotto finito e ingredienti">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Precedente
+              </span>
+              <div class="md-ellipsis">
+                Prodotto finito e ingredienti
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../modelli-trasformazione/" class="md-footer__link md-footer__link--next" aria-label="Successivo: Modelli di trasformazione">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Successivo
+              </span>
+              <div class="md-ellipsis">
+                Modelli di trasformazione
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright Custom S.p.A 2026
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.instant.preview", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.sections", "navigation.prune", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "navigation.footer"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+    
+  </body>
+</html>
